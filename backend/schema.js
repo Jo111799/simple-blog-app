@@ -8,19 +8,35 @@ export const userSchema = new mongoose.Schema({
     minlength: 6,
     maxlength: 30,
   },
-  name: String,
+  name:{
+    type: String,
+  },
   password: {
     type: String,
     required: true,
+    minlength: 6,
+    maxlength: 30,
   },
 });
 
 export const postSchema = new mongoose.Schema({
-  title: { type: String, required: true },
-  description: { type: String, required: true },
-  imageUrl: { type: String, required: true },
+  title: { 
+    type: String, 
+    required: true, 
+  },
+  description: { 
+    type: String, 
+    required: true, 
+  },
+  imageUrl: { 
+    type: String, 
+    required: true, 
+  },
   author: {
-    username: { type: String, required: true },
+    username: { 
+      type: String,
+      required: true, 
+    },
     name: String,
   },
   postedAt: Number,

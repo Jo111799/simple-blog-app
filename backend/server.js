@@ -23,7 +23,7 @@ const frontendPort = process.env.FRONTEND_PORT || 5173;
 | `blogapp`    | Database name – this is the **target database** you want to work with       |
 
 */
-const mongoUri = process.env.MONGODB_URI || "mongodb://localhost:27017/blogapp";
+const mongoUri = process.env.MONGODB_URI || "mongodb://localhost:27017/blogapp"; //Datenbank
 const port = process.env.PORT || 3000;
 
 // === Models ===
